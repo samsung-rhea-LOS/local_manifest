@@ -1,20 +1,20 @@
-Manifest for Android Lollipop / LineageOS 12.1
+Manifest for Android Marshmallow / Cyanogenmod 13
 ====================================
-Project corsica|GT-S5310/GT-S5312
+Project zanin | GT-B5330
 
 ---
 
 Manual Way:
 
-To initialize LineageOS 12.1 Repo:
+To initialize LineageOS 13 Repo:
 
-    repo init -u https://github.com/LineageOS/android.git -b cm-12.1 --no-clone-bundle --depth=1
+    repo init -u https://github.com/LineageOS/android.git -b cm-13.0 --no-clone-bundle --depth=1
 
 ---
 
 To initialize Manifest:
 
-    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/bcm216xx-LOS/local_manifest/cm-12.1/local_manifest.xml
+    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/samsung-rhea-LOS/local_manifest/cm-13.0/local_manifest.xml
 
 ---
 
@@ -24,20 +24,13 @@ Sync the repo:
 
 ---
 
-Sync prebuilts:
-
-    cd vendor/cm
-    ./get-prebuilts
-    cd ../..
-
----
-
 Initialize the environment:
 
-    source build/envsetup.sh
+    . build/envsetup.sh
 
 ---
 
 To build:
 
-    brunch corsica
+    lunch lineage_zanin-userdebug
+    mka otapackage
