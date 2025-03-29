@@ -14,7 +14,7 @@ To initialize LineageOS 11.0 Repo:
 
 To initialize Manifest:
 
-    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/bcm216xx-LOS/local_manifest/cm-11.0/local_manifest.xml
+    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/samsung-rhea-LOS/local_manifest/cm-11.0/local_manifest.xml
 
 ---
 
@@ -24,25 +24,27 @@ Sync the repo:
 
 ---
 
-Sync prebuilts:
-
-    cd vendor/cm
-    ./get-prebuilts
-    cd ../..
-
----
-
 Apply Pacht
 
 	git clone https://github.com/bcm216xx-LOS/android_patches_los11.git
 	sh android_patches_los11/apply-patches.sh
+---
+
+Fix buttons
+
+	modify frameworks/base/data/keyboards/Generic.kl as described in this commit:
+ 	[Commit 29e8260](https://github.com/samshit-bcm/android_frameworks_base/commit/29e826068871a964b3134d184b009fab47ef43df)
+	A patch will be developed soon, but in the meantime you'll have to do this
+---
 
 Initialize the environment:
 
-    source build/envsetup.sh
+    . build/envsetup.sh
 
 ---
 
 To build:
 
-    brunch corsica
+	lunch lineage_zanin-userdebug
+ 	mka otapackage
+  	cd $OUT
