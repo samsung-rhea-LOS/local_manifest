@@ -30,12 +30,11 @@ Apply Pacht
 	sh android_patches_los11/apply-patches.sh
 ---
 
-Fix buttons
+To fix buttons
 
-	modify frameworks/base/data/keyboards/Generic.kl as described in this commit:
- 	[Commit 29e8260](https://github.com/samshit-bcm/android_frameworks_base/commit/29e826068871a964b3134d184b009fab47ef43df)
-	A patch will be developed soon, but in the meantime you'll have to do this
----
+modify frameworks/base/data/keyboards/Generic.kl as described in this commit:
+[Commit 29e8260](https://github.com/samshit-bcm/android_frameworks_base/commit/29e826068871a964b3134d184b009fab47ef43df)
+A patch will be developed soon, but in the meantime you'll have to do this
 
 Initialize the environment:
 
