@@ -9,7 +9,7 @@
 	<!-- Common Project -->
 	<project path="device/samsung/rhea-common" name="samsung-rhea-LOS/android_device_samsung_rhea-common" revision="cm-12.1" remote="github" />
 	<project path="vendor/samsung" name="samsung-rhea-LOS/proprietary_vendor_samsung" revision="cm-12.1" remote="github" />
-	<!-- Project corsica -->
-	<project path="device/samsung/corsica" name="samsung-rhea-LOS/android_device_samsung_zanin" revision="cm-12.1" remote="github" />
+	<!-- Project zanin -->
+	<project path="device/samsung/zanin" name="samsung-rhea-LOS/android_device_samsung_zanin" revision="cm-12.1" remote="github" />
 	<project path="kernel/samsung/rhea" name="samsung-rhea-LOS/android_kernel_rhea" revision="cm-12.1" remote="github" />
 </manifest>
