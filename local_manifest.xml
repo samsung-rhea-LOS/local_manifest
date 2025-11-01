@@ -15,5 +15,5 @@
 	<!-- Toolchain -->
 	<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="bcm216xx-LOS/arm-eabi-4.7" revision="master" remote="github" />
 	<!-- Patches -->
-	<project path="build_tools" name="samsung-rhea-LOS/build_tools" revision="cm-12.1" remote="github" />
+	<project path="build_tools" name="samsung-rhea-LOS/build_tools" revision="cm-13.0" remote="github" />
 </manifest>
